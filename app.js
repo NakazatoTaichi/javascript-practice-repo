@@ -1,15 +1,21 @@
-function getSeason() {
-    const month = new Date().getMonth() + 1;
-    if (month >= 3 && month <= 5) {
-        return "spring";
-    } else if (month >= 6 && month <= 8) {
-        return "summer"
-    } else if (month >= 9 && month <= 11) {
-        return "autumn"
+// const sonicBoom = () => {
+//     return 20;
+// }
+// console.log(sonicBoom());
+
+// function metalBurst(lastDamage) {
+//     return lastDamage * 1.5;
+// }
+
+// console.log(metalBurst(10));
+
+function hornDrill (theirHp) {
+    const num = Math.random();
+    if (num <= 0.3) {
+        return theirHp;
     } else {
-        return "winter"
+        return 0;
     }
 }
 
-const season = getSeason();
-console.log(season);
+console.log(hornDrill(100));
