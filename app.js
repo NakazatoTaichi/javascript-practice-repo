@@ -1,21 +1,35 @@
-// const sonicBoom = () => {
-//     return 20;
+// const snsUser = {
+//     id: 1,
+//     username: "Taro",
+//     like: function() {},
+//     post: function() {},
+//     followers: ["Yamada", "Suzuki", "Tanaka"],
+//     following: ["Yamada", "Suzuki"],
+//     premium: true,
+//     darkMode: false,
+//     posts: null,
 // }
-// console.log(sonicBoom());
 
-// function metalBurst(lastDamage) {
-//     return lastDamage * 1.5;
-// }
+// console.log(snsUser.followers[1]);
 
-// console.log(metalBurst(10));
-
-function hornDrill (theirHp) {
-    const num = Math.random();
-    if (num <= 0.3) {
-        return theirHp;
-    } else {
-        return 0;
+const snsUser = {
+    id: 1,
+    username: "Taro",
+    like: function() {},
+    post: function() {},
+    followers: ["Yamada", "Suzuki", "Tanaka"],
+    following: ["Yamada", "Suzuki"],
+    posts: null,
+    settings: {
+        premium: true,
+        darkMode: false,
+    },
+    actions: {
+        like: () => {
+            console.log("こんにちは");
+        },
+        post: () => {}
     }
 }
 
-console.log(hornDrill(100));
+console.log(snsUser.settings.darkMode);
