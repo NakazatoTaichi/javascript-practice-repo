@@ -1,18 +1,8 @@
-const pikachu = {
-    name: "ピカチュウ",
-    level: 18,
-    types: ["でんき"],
-    skills: ["10万ボルト", "でんこうせっか", "たいあたり"],
-    levelUp: function() {
-        this.level++;
-        if (this.level >= 20) {
-            this.skills.push("スパーク");
-        };
-    },
-};
+console.log(parseInt("2"));
 
-console.log(pikachu.level, pikachu.skills);
-pikachu.levelUp();
-console.log(pikachu.level, pikachu.skills);
-pikachu.levelUp();
-console.log(pikachu.level, pikachu.skills);
+//consoleオブジェクトのメソッド
+console.log(console);
+
+console.log(Math);
+console.log(Math.PI);
+console.log(Math.ceil(5.3));
