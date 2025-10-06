@@ -1,8 +1,13 @@
-console.log(parseInt("2"));
+const myPokemons = ["サンダー", "ホウオウ", "スイクン", "ラティアス", "パルキア"];
 
-//consoleオブジェクトのメソッド
-console.log(console);
+myPokemons.push("ミュウツー");
+// console.log(myPokemons);
 
-console.log(Math);
-console.log(Math.PI);
-console.log(Math.ceil(5.3));
+console.log(myPokemons.length);
+//文字列もカウント
+console.log("サンダー".length);
+
+const oldVersions = ["赤", "緑", "青"];
+const newVersions = ["ルビー", "サファイア", "エメラルド"];
+
+console.log(oldVersions.concat(newVersions));
