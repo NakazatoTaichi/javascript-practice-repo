@@ -1,9 +1,18 @@
-const snsUser = {
-    id: 1,
-    username: "Taro",
-    post: function(contents) {
-        return contents + "を投稿しました by " + this.username;
+const pikachu = {
+    name: "ピカチュウ",
+    level: 18,
+    types: ["でんき"],
+    skills: ["10万ボルト", "でんこうせっか", "たいあたり"],
+    levelUp: function() {
+        this.level++;
+        if (this.level >= 20) {
+            this.skills.push("スパーク");
+        };
     },
 };
 
-console.log(snsUser.post("プログラミングなう。"));
+console.log(pikachu.level, pikachu.skills);
+pikachu.levelUp();
+console.log(pikachu.level, pikachu.skills);
+pikachu.levelUp();
+console.log(pikachu.level, pikachu.skills);
