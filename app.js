@@ -1,8 +1,11 @@
-const $post = document.createElement("article");
-//setAttribute(セレクタ名, セレクタの値)
-$post.setAttribute("class", "post");
-$post.innerText = "お腹減ったなう。";
+// windowに対するaddEventListenerはWebページ全体に対するイベント
+// window.addEventListener("イベントタイプ", "イベント時に実行する関数")
+window.addEventListener("load", function(){
+    alert("読み込み完了");
+})
 
-const $timeline = document.querySelectorAll(".timeline")[0];
-//appendChild()→取得したHTML要素に使うと、引数に入れた別のHTML要素を挿入することができる。
-$timeline.appendChild($post);
+// documentに対するaddEventListenerは個々のHTML要素に関するイベントを設定（ボタンや画像など）
+// document.addEventListener()
+document.querySelector("#button").addEventListener("click", function(){
+    console.log("クリックされた！");
+});
