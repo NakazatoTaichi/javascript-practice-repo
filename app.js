@@ -1,18 +1,19 @@
-//alertはwindowオブジェクトのメソッド
-//windowは省略することもできる
+// console.log(document.querySelector("#foo"));
+// console.log(document.querySelectorAll(".bar")[0].innerHTML = "<div>Hello!<div>");
 
-// window.alert("危険です");
-// alert("危険です");
+// document.getElementById("foo")
+// console.log(document.getElementsByClassName("bar")[0].innerHTML = "<div>Hello!<div>");
 
-//documentオブジェクト→windowオブジェクトが持つプロパティの一つ
-//HTMLやCSSの操作を行うことができる
+const $foo = document.querySelectorAll(".bar");
 
-// console.log(document);
-document.querySelector("#pokemon").innerText = "ポケモンゲットだぜ！";
-document.querySelector("#pokemon").style.backgroundColor = "#000";
+//$→変数がHTMLを格納していることを表すプレフィックス
+$foo[0].innerHTML = "<div>Hello!<div>";
 
-const timer = setTimeout(function() {
-    alert("こんにちは！");
-}, 5000);
+//絶対に変わらない定数は大文字にする
+const DOMAIN = "https://pokemon.com"
 
-clearTimeout(timer);
+//true/falseで状態を表す系の変数=is〇〇
+const isLogin = false;
+
+//二つ以上の英単語をつなげたい場合(キャメルケース)
+const pokemonName = "pikacyu"
