@@ -1,13 +1,18 @@
-const myPokemons = ["サンダー", "ホウオウ", "スイクン", "ラティアス", "パルキア"];
+//alertはwindowオブジェクトのメソッド
+//windowは省略することもできる
 
-myPokemons.push("ミュウツー");
-// console.log(myPokemons);
+// window.alert("危険です");
+// alert("危険です");
 
-console.log(myPokemons.length);
-//文字列もカウント
-console.log("サンダー".length);
+//documentオブジェクト→windowオブジェクトが持つプロパティの一つ
+//HTMLやCSSの操作を行うことができる
 
-const oldVersions = ["赤", "緑", "青"];
-const newVersions = ["ルビー", "サファイア", "エメラルド"];
+// console.log(document);
+document.querySelector("#pokemon").innerText = "ポケモンゲットだぜ！";
+document.querySelector("#pokemon").style.backgroundColor = "#000";
 
-console.log(oldVersions.concat(newVersions));
+const timer = setTimeout(function() {
+    alert("こんにちは！");
+}, 5000);
+
+clearTimeout(timer);
